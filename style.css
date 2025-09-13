@@ -1,0 +1,23 @@
+*{margin:1%; padding:0px;}
+
+#nav{ background-color:rgb(77, 28, 28); color: white;width:100% }
+
+.lists{display:flex; flex-direction: row;justify-content: space-evenly ; list-style-type: none;}
+.lists li a{padding:9px ; text-decoration: underline; }
+
+#hero { display:flex; flex-direction:column; align-items: center; justify-content: center;} 
+.smallauthimage{width :200px; height:200px; ; position: relative;border-radius: 50px;}
+
+/*Media Queries*/
+@media screen and (min-width:601px) { .authimage {display:block } .smallauthimage {display:none} .name{display:none;} #hero p {display:none}}
+
+@media screen and (min-width:100px) and (max-width:600px){.authimage { display:none } .authtext1{display: none;}} 
+
+#hero .name { font-size: 30px; color: rgb(77, 28, 28);}
+#hero p { font-size: 15px;  ; color: rgb(77, 28, 28);  }
+#authtext1{ position:relative ;justify-content: center; font-size: 1rem; text-align: justify;}
+
+
+.projects{ display:grid; grid-template-columns: repeat( 3 ,1fr); gap:29px ;padding:1% 1% 0% 2% ; margin:1%}
+
+.work{ display: flex;flex-direction: column;flex-wrap: wrap;justify-content: center; align-items: center; }
